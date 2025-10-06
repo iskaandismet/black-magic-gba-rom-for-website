@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Black Magic - GBA</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
+            background-color: #111; display: flex;
+            justify-content: center; align-items: center;
+        }
+        #game-container { width: 720px; height: 480px; }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <script>
+        var EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
+    </script>
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+    <script>
+        EJS_player = '#game-container';
+        EJS_core = 'gba';
+        EJS_gameUrl = 'https://iskaandismet.github.io/black-magic-gba-rom-for-website/blackmagic.gba';
+    </script>
+</body>
+</html>
